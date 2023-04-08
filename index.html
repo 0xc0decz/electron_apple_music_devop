@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Music</title>
+    <link rel="stylesheet" href="styles.css">
+
+
+</head>
+
+<body class="body_radius">
+    <div id="titlebar_drag" class="titlebar_drag"></div>
+    <div id="titlebar" class="titlebar tm_light">
+        <div class="titlebar_main">
+
+            <!--      <div class="titlebar_icon_main">
+       
+
+      </div>-->
+            <div class="titlebar_appicon">
+                <img class="titlebar_icon" src="assets/apple-music.png" />
+            </div>
+            <div class="titlebar_title">Apple Music Desktop Player</div>
+
+
+        </div>
+        <div class="titlebar_buttons">
+            <button id="titlebar_exit" class="titlebar_btn"><img class="app_close_icn toDark" src="assets/icons/dark/close_btn_dark.svg" alt=""/></button>
+            <button id="titlebar_max" class="titlebar_btn"><img class="app_maximize_icn toDark" src="assets/icons/dark/maximize_btn_dark.svg" alt=""/></button>
+            <button id="titlebar_min" class="titlebar_btn"><img class="app_minimize_icn toDark" src="assets/icons/dark/minimise_btn_dark.svg" alt=""/></button>
+            <button id="titlebar_set" class="titlebar_btn"><img class="app_settings_icn toDark" src="assets/icons/dark/settings_app_dark.svg" alt=""/></button>
+            <button id="titlebar_drag_sw" class="titlebar_btn_sw"><img class="app_drag_icn toDark" src="assets/icons/dark/drag_app_dark.svg" alt=""/></button>
+            <button id="titlebar_theme_sw" class="titlebar_btn_sw"><img class="app_theme_icn toDark" src="assets/icons/dark/titlebar_theme_switch_dark.svg" alt=""/></button>
+
+            <div class="titlebar_title_sec">Unofficial Developer Version</div>
+
+
+
+        </div>
+    </div>
+    <webview id="app_page" src="http://music.apple.com/"></webview>
+
+    <script src="./renderer.js"></script>
+
+</body>
+
+</html>

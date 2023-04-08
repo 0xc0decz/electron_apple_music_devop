@@ -1,0 +1,287 @@
+/* styles.css */
+
+
+/* Add styles here to customize the appearance of your app */
+
+@font-face {
+    font-family: "San Francisco";
+    font-weight: 400;
+    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
+
+
+/* * --------------- FONTS --------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+/* * --------------- FONTS --------------- */
+
+html {
+    overflow: hidden;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+webview {
+    flex: 1;
+}
+
+
+/* --------------- OTHERS --------------- */
+
+.titlebar_drag {
+    /*added*/
+    top: 6px;
+    left: 6px;
+    display: block;
+    position: absolute;
+    width: calc(100% - 12px);
+    height: 20px;
+    z-index: -1;
+    -webkit-app-region: drag;
+}
+
+.candrag {
+    -webkit-app-region: drag;
+    position: relative;
+}
+
+.notdrag {
+    -webkit-app-region: no-drag;
+}
+
+.body_radius {
+    border-radius: 5px;
+}
+
+.body_noradius {
+    border-radius: 0px;
+}
+
+
+/* --------------- OTHERS --------------- */
+
+
+/* --------------- TITLEBAR_BTN --------------- */
+
+.titlebar_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    border: none;
+    margin-left: 4px;
+    cursor: pointer;
+}
+
+.titlebar_btn_sw {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    border: none;
+    margin-left: 4px;
+    cursor: pointer;
+}
+
+.titlebar_btn_sw:hover {
+    transition: all 0.2s ease;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 2px;
+}
+
+.titlebar_btn_sw_active {
+    transition: all 0.2s ease;
+    background-color: rgba(90, 217, 118, 0.5);
+    border-radius: 2px;
+}
+
+.titlebar_btn_sw_active:hover {
+    transition: all 0.2s ease;
+    background-color: rgb(67, 191, 94, 0.5);
+    border-radius: 2px;
+}
+
+.titlebar_btn:hover {
+    transition: all 0.2s ease;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 2px;
+}
+
+
+/* --------------- TITLEBAR_BTN --------------- */
+
+
+/* --------------- THEME --------------- */
+
+.tm_light {
+    background-color: #222222;
+    /* OLD #252526  - NEW #444444 */
+}
+
+.tm_dark {
+    background-color: #E9E9E9;
+}
+
+
+/* --------------- THEME --------------- */
+
+
+/* --------------- TITLEBAR --------------- */
+
+.titlebar {
+    color: #fff;
+    height: 32px;
+}
+
+.titlebar_main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    color: #fff;
+    height: 32px;
+    padding-left: 5px;
+}
+
+.titlebar_appicon {
+    display: flex;
+    margin-left: 5px;
+    margin-right: 2.5px;
+}
+
+.titlebar_icon {
+    width: 16px;
+    height: 16px;
+}
+
+.titlebar_title {
+    margin-left: 5px;
+    margin-top: 0px;
+    font-weight: 600;
+    font-size: 10px;
+    color: #cccccc;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.titlebar_title_sec {
+    margin-top: 0px;
+    display: flex;
+    margin-left: 4px;
+    font-weight: lighter;
+    font-size: 10px;
+    color: rgba(204, 204, 204, 0.3);
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.titlebar {
+    flex-direction: row-reverse;
+}
+
+.titlebar,
+.titlebar_buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    direction: rtl;
+    user-select: none;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.titlebar_buttons {
+    -webkit-app-region: no-drag;
+    margin-right: 10px;
+}
+
+
+/* --------------- TITLEBAR --------------- */
+
+
+/* --------------- ICONS --------------- */
+
+.toLight {
+    filter: invert(100%);
+}
+
+.toDark {
+    filter: invert(0%);
+}
+
+.app_close_icn,
+.app_maximize_icn,
+.app_minimize_icn,
+.app_settings_icn,
+.app_drag_icn,
+.app_theme_icn {
+    width: 16px;
+    line-height: 0px;
+    height: 16px;
+}
+
+
+/* --------------- ICONS --------------- */
+
+
+/* --------------- SPLASH SCREEN --------------- */
+
+
+/* --------------- SPLASH SCREEN --------------- */
+
+.splash_body_radius {
+    border-radius: 5px;
+}
+
+.splash_body {
+    background-color: #252526;
+}
+
+.splash_titlebar {
+    color: #fff;
+    height: 20px;
+}
+
+.splash_titlebar_main {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: reverse;
+    color: #fff;
+    height: 20px;
+    padding-left: 5px;
+}
+
+.splash_titlebar_title {
+    margin-left: 4px;
+    font-weight: lighter;
+    font-size: 13px;
+    color: #cccccc;
+    font-family: "San Francisco";
+}
+
+.splash_titlebar_title_sec {
+    margin-top: 4px;
+    display: flex;
+    margin-left: 4px;
+    font-weight: normal;
+    font-size: 10px;
+    color: rgba(204, 204, 204, 0.3);
+    font-family: "San Francisco";
+}
+
+.splash_app {
+    height: 200px;
+    border-radius: 5px;
+    background-color: #a7a7ae;
+}

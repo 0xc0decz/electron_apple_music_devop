@@ -1,0 +1,26 @@
+{
+    "name": "Apple-Music-Desktop-Player",
+    "version": "1.0.0",
+    "description": "Apple Music Desktop Player is an unofficial desktop application that allows you to access Apple Music on your computer. With this app, you can easily listen to your favorite songs, create playlists, and discover new music. Please note that this application is not an official release by Apple",
+    "main": "main.js",
+    "scripts": {
+        "start": "electron ."
+    },
+    "repository": "https://github.com/electron/electron-quick-start",
+    "keywords": [
+        "Electron",
+        "quick",
+        "start",
+        "tutorial",
+        "demo"
+    ],
+    "author": "GitHub",
+    "license": "CC0-1.0",
+    "devDependencies": {
+        "electron": "^23.2.1",
+        "electron-reloader": "^1.2.3"
+    },
+    "dependencies": {
+        "electron-reload": "^2.0.0-alpha.1"
+    }
+}
